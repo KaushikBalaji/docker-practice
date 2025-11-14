@@ -1,0 +1,3 @@
+kaushikbalaji/calci-app:1.0
+
+Docker Image link --  https://hub.docker.com/r/kaushikbalaji/calci-app/tags
