@@ -55,9 +55,12 @@ sudo docker push kaushikbalaji/calci-app:1.0
 ### Docker image pushed to DockerHub
 <img width="1915" height="1043" alt="after push to docker" src="https://github.com/user-attachments/assets/a7ff4617-6784-4044-8996-5cfaad0b5afa" />
 
-
 ### Pulled the image and ran it on another machine (with windows OS)
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c8d93ab4-aa57-4279-ad0b-01e1055b8e0c" />
+
+### Docker run works on another windows system
+<img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/ad60f678-8175-4ed0-8a59-029a9d6b1c5a" />
+
 
 
 
