@@ -10,7 +10,7 @@ The docker image is at https://hub.docker.com/r/kaushikbalaji/calci-app/tags
 
 If you just want to run the calculator app, you don't need to build it. You can pull the pre-built image directly from Docker Hub.
 
-### 1. Pull the Image
+### 1. Pull the Image and run with a container
 
 Open your terminal and pull the versioned image, and run the image in a container. This will run the app:
 
@@ -19,22 +19,10 @@ docker pull kaushikbalaji/calci-app:1.0
 
 # to create a nameless container: it opens, runs the app and closes itself.
 docker run -it --rm kaushikbalaji/calci-app:1.0
-```
 
-If you want to run the container and have it persist (not be removed) after you exit, you can give it a name.
-```bash
-docker pull kaushikbalaji/calci-app:1.0
-
-# Run and name the container
+# if u want to have a single container, then name it, and reuse it.
 docker run -it --name calci_container kaushikbalaji/calci-app:1.0
-
-# After you exit, the container will be stopped. You can see it with:
-docker ps -a
-
-# To restart and re-attach to the same container:
-docker start -i calci_container
 ```
-
 
 ## 🛠️ How This Was Built
 ### 1. Build the Image
@@ -43,32 +31,22 @@ The image was built locally using the Dockerfile in this repository.
 ```bash
 # Build the image and tag it
 sudo docker build -t kaushikbalaji/calci-app .
-```
 
-### 2. Test Locally
-
-Before publishing, the image was run locally to ensure the calculator app worked as expected.
-
-```bash
-# Run interactively, and remove the container after exit
+# for local testing of image
 sudo docker run -it --rm kaushikbalaji/calci-app:latest
-```
 
-### 3. Tag for Release
-
-After successful testing, the latest image was given a specific version tag (1.0). This is a best practice for version control.
-```bash
-# Tag the image with version 1.0
+# make a new image with tag for pushing
 sudo docker tag kaushikbalaji/calci-app kaushikbalaji/calci-app:1.0
-```
 
-### 4. Publish to Docker Hub
-
-Finally, the versioned image was pushed to the Docker Hub registry, making it publicly available for the docker pull command.
-```bash
-# Push the 1.0 tag to Docker Hub
+# Push the new 1.0 tag image to Docker Hub
 sudo docker push kaushikbalaji/calci-app:1.0
 ```
+## Some screenshots
+
+
+### Pulled the image and ran it on another machine (with windows OS)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c8d93ab4-aa57-4279-ad0b-01e1055b8e0c" />
+
 
 
 
