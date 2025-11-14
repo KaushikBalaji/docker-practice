@@ -6,6 +6,8 @@ The image is hosted on Docker Hub and can be pulled and run by anyone.
 
 The docker image is at https://hub.docker.com/r/kaushikbalaji/calci-app/tags
 
+Github Container Registry (GHCR) image link -- https://github.com/KaushikBalaji/docker-practice/pkgs/container/calci-app 
+
 ## 🚀 Quick Start: Run the App from Another machine
 
 If you just want to run the calculator app, you don't need to build it. You can pull the pre-built image directly from Docker Hub.
